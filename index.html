@@ -1,4 +1,323 @@
 <!doctype html>
 <html lang="id">
-<head><meta charset="utf-8"><title>Tornado Product Knowledge — Clean Revision</title></head>
-<body><h1>Tornado Product Knowledge — Clean Revision</h1><p>File lengkap sudah ter-generate. Silakan gunakan file index.html ini untuk publikasi.</p></body></html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tornado Knowledge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0a0a0a;
+      --panel:#0f1014;
+      --card:#121318;
+      --ink:#ffffff;
+      --muted:#a7b0bf;
+      --accent:#d10000;
+      --accent2:#ffb703;
+      --line:#20232b;
+      --chip:#1a1d23;
+      --ok:#22c55e;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font:500 15px/1.65 Poppins,system-ui,sans-serif}
+    a{color:#d6e5ff;text-decoration:none}
+    .wrap{max-width:1180px;margin:auto;padding:28px 18px 80px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px}
+    .brand{
+      display:flex;align-items:center;gap:14px
+    }
+    .logo{
+      width:38px;height:38px;border-radius:10px;background:linear-gradient(145deg,#240000,#7a0000 70%);
+      box-shadow:0 8px 24px rgba(209,0,0,.25), inset 0 0 18px rgba(255,60,60,.4)
+    }
+    .ttl{font:800 22px/1 Poppins;letter-spacing:.2px}
+    .nav{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{background:var(--chip);border:1px solid var(--line);padding:8px 11px;border-radius:10px;color:#cfd6e3}
+    .hero{
+      border:1px solid var(--line);border-radius:16px;background:
+        radial-gradient(1200px 420px at 75% -40%, rgba(209,0,0,.25),transparent 60%),
+        linear-gradient(180deg,#111115,#0a0a0a 50%);
+      padding:20px 18px;margin-bottom:18px
+    }
+    .hero h1{margin:0 0 6px;font:800 24px/1 Poppins}
+    .hero p{margin:0;color:#cbd3e2}
+    .grid{display:grid;gap:18px}
+    @media (min-width:960px){.grid{grid-template-columns:1fr 1fr}}
+    section.card{
+      background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 16px
+    }
+    h2{margin:0 0 4px;font:800 18px/1.2 Poppins}
+    .badge{display:flex;gap:8px;flex-wrap:wrap;margin:.25rem 0 .6rem}
+    .b{font:700 11px/1 Poppins;letter-spacing:.35px;text-transform:uppercase;color:#eaeef5;padding:7px 9px;border-radius:999px;border:1px solid #2c3039;background:#10131a}
+    .b.red{border-color:#5f1b1b;background:#160c0c;color:#ffd6d0}
+    .b.gold{border-color:#6a4a00;background:#141006;color:#ffe2ac}
+    .b.green{border-color:#085b38;background:#0a1411;color:#caffea}
+    .kvs{display:flex;flex-wrap:wrap;gap:8px;margin:.25rem 0 .55rem}
+    .k{background:#0f1218;border:1px solid #1e2430;border-radius:10px;padding:7px 10px;color:#d7deea;font-weight:600}
+    p{margin:.2rem 0 .7rem;color:#dbe2ef}
+    table{width:100%;border-collapse:collapse;background:#0d0f14;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:.55rem 0}
+    th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #151820}
+    th{font:800 12px/1 Poppins;letter-spacing:.4px;text-transform:uppercase;color:#a9b6c8;background:#0b0d12}
+    td{color:#e7edf8}
+    tr:last-child td{border-bottom:none}
+    .mono{font:600 13px/1.3 "Roboto Mono",monospace}
+    .note{color:var(--muted);font-size:13px}
+    .divider{height:1px;background:var(--line);margin:18px 0}
+    footer{margin-top:30px;color:#93a0ad}
+    /* small dots bg */
+    body::before{
+      content:"";position:fixed;inset:0;
+      background:
+       radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px) 0 0/18px 18px;
+      pointer-events:none;opacity:.35
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"></div>
+        <div class="ttl">Tornado Knowledge</div>
+      </div>
+      <nav class="nav">
+        <a class="chip" href="#rods">Joran</a>
+        <a class="chip" href="#reels">Reel</a>
+        <a class="chip" href="#matrix">Ringkas</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Powerful • Precise • Field-Ready</h1>
+      <p>Product knowledge Tornado — versi bersih & konsisten untuk tim konten, sales, dan CS. (Shopee-verified)</p>
+    </div>
+
+    <!-- =============== RODS =============== -->
+    <h2 id="rods" style="margin:6px 0 12px">Joran — Core Specs</h2>
+    <div class="grid">
+
+      <!-- Twist FS -->
+      <section class="card" id="twist-fs">
+        <h2>Twist FS</h2>
+        <div class="badge">
+          <span class="b">Fiber Solid</span>
+          <span class="b red">X-GUIDE Ring</span>
+          <span class="b">Full EVA</span>
+        </div>
+        <p>Joran fiber harian: lentur, tahan banting, tetap responsif pas strike. Enak buat kolam & spot liar.</p>
+        <div class="kvs">
+          <div class="k">150 / 165 / 180 / 210 cm</div>
+          <div class="k">2 section (Middle Joint)</div>
+          <div class="k">Warna: Hitam</div>
+        </div>
+        <table>
+          <thead><tr><th>Model</th><th>Line WT</th><th>Lure WT</th><th>Guide</th></tr></thead>
+          <tbody>
+            <tr><td>502 / 150 cm</td><td>6–14 lb</td><td>4–16 g</td><td>5+1</td></tr>
+            <tr><td>562 / 165 cm</td><td>8–17 lb</td><td>4–18 g</td><td>6+1</td></tr>
+            <tr><td>602 / 180 cm</td><td>8–17 lb</td><td>7–28 g</td><td>6+1</td></tr>
+            <tr><td>702 / 210 cm</td><td>10–20 lb</td><td>8–30 g</td><td>6+1</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Distribusi beban mulus; feel lentur tapi nggak “getas”.</div>
+      </section>
+
+      <!-- Blue Lotus -->
+      <section class="card" id="blue-lotus">
+        <h2>Blue Lotus (Spin & BC)</h2>
+        <div class="badge">
+          <span class="b">Carbon Hollow</span>
+          <span class="b">Ring Tornado</span>
+          <span class="b">Japan Style</span>
+        </div>
+        <p>Blank hollow ringan & rigid; stabil di tekanan tinggi. Enak buat casting dan manuver cepat.</p>
+        <div class="kvs">
+          <div class="k">Spin: 150 / 165 / 180 cm</div>
+          <div class="k">BC: 180 / 189 / 198 cm</div>
+          <div class="k">Warna: Silver • Merah • Emas</div>
+        </div>
+        <div class="note">Distribusi tekanan merata dari pangkal ke ujung.</div>
+      </section>
+
+      <!-- Violent -->
+      <section class="card" id="violent">
+        <h2>Violent Series</h2>
+        <div class="badge">
+          <span class="b">Carbon Solid</span>
+          <span class="b">Ring Tornado</span>
+          <span class="b">Full EVA / Japan Style</span>
+        </div>
+        <p>Ujung main halus, pangkal keras. Backbone kuat buat fight panjang, tetap sensitif di bite halus.</p>
+        <div class="kvs">
+          <div class="k">150 / 165 / 180 cm</div>
+          <div class="k">Varian: Full EVA (Hitam) • Japan Style (Silver)</div>
+        </div>
+      </section>
+
+      <!-- Brownze -->
+      <section class="card" id="brownze">
+        <h2>Brownze Series</h2>
+        <div class="badge">
+          <span class="b">Carbon Solid</span>
+          <span class="b red">X-GUIDE Ring</span>
+          <span class="b">Full EVA / Japan Style</span>
+        </div>
+        <p>Solid blank seimbang: ujung responsif, pangkal padat. Feel strike hidup tapi tetap bertenaga.</p>
+        <table>
+          <thead><tr><th>Panjang</th><th>Line WT (±)</th></tr></thead>
+          <tbody>
+            <tr><td>150 cm</td><td>5–13 lb</td></tr>
+            <tr><td>165 cm</td><td>6–14 lb</td></tr>
+            <tr><td>180 cm</td><td>8–17 lb</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Light Jig Force -->
+      <section class="card" id="ljf">
+        <h2>Light Jig Force Optimal</h2>
+        <div class="badge">
+          <span class="b">Carbon Solid</span>
+          <span class="b">Ring ZEN (setara Fuji)</span>
+          <span class="b">180 cm • 2 pcs (Butt Joint)</span>
+        </div>
+        <table>
+          <thead><tr><th>PE Class</th><th>Drag (±)</th><th>Jig Max</th></tr></thead>
+          <tbody>
+            <tr><td>PE 1–3</td><td>10 kg</td><td>150 g</td></tr>
+            <tr><td>PE 2–4</td><td>15 kg</td><td>200 g</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Ujung sensitif buat deteksi bite; backbone solid buat angkat jig & kontrol tarikan.</div>
+      </section>
+
+      <!-- Voyage -->
+      <section class="card" id="voyage">
+        <h2>Twist Voyage</h2>
+        <div class="badge">
+          <span class="b">Carbon Hollow</span>
+          <span class="b">4 Section (Travel)</span>
+          <span class="b">Ring Tornado • Japan Style</span>
+        </div>
+        <p>Travel rod ringkas tanpa ngorbanin performa. Ringan, sensitif, presisi.</p>
+        <table>
+          <thead><tr><th>Panjang</th><th>PE</th></tr></thead>
+          <tbody>
+            <tr><td>198 cm (664M)</td><td>0.8–1.5</td></tr>
+            <tr><td>210 cm (704MH)</td><td>1.5–2.5</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Surf -->
+      <section class="card" id="surf">
+        <h2>Twist Surf</h2>
+        <div class="badge">
+          <span class="b">Carbon Hollow</span>
+          <span class="b">3 Section</span>
+          <span class="b">Ring Tornado • Rubber Grip</span>
+        </div>
+        <p>Surf casting & rock fishing. Jangkauan lempar jauh, stabil di angin.</p>
+        <div class="kvs">
+          <div class="k">390 / 420 / 450 cm</div>
+          <div class="k">Cast: 100–200 g</div>
+          <div class="k">Warna: Blue body</div>
+        </div>
+      </section>
+
+      <!-- Ultima Extreme -->
+      <section class="card" id="ultima">
+        <h2>Ultima Extreme</h2>
+        <div class="badge">
+          <span class="b">HRS Carbon Solid 24Ton</span>
+          <span class="b red">Full FUJI Ring</span>
+          <span class="b">Full EVA • Middle Joint</span>
+        </div>
+        <table>
+          <thead><tr><th>Panjang</th><th>Line WT</th><th>Lure WT</th><th>Guide</th></tr></thead>
+          <tbody>
+            <tr><td>165 cm (ULTX562MLS)</td><td>7–15 lb</td><td>10–22 g</td><td>6+1</td></tr>
+            <tr><td>180 cm (ULTX602MS)</td><td>8–17 lb</td><td>12–28 g</td><td>6+1</td></tr>
+            <tr><td>180 cm (ULTX602MHS)</td><td>10–20 lb</td><td>15–35 g</td><td>6+1</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Fokus durabilitas & presisi — solid 24T + komponen Fuji full set.</div>
+      </section>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- =============== REELS =============== -->
+    <h2 id="reels" style="margin:6px 0 12px">Reel — Core Specs</h2>
+    <div class="grid">
+
+      <!-- Babon -->
+      <section class="card" id="reel-babon">
+        <h2>Babon Reel — Limited Pro Series</h2>
+        <div class="badge">
+          <span class="b">SGB Graphite Body</span>
+          <span class="b">8+1 Bearings</span>
+          <span class="b">CNC Power Handle</span>
+          <span class="b">Aluminium Spool</span>
+        </div>
+        <table class="mono">
+          <thead><tr><th>Size</th><th>Gear</th><th>Drag</th><th>Berat</th><th>Line Capacity</th></tr></thead>
+          <tbody>
+            <tr><td>3000</td><td>5.2:1</td><td>6 kg</td><td>250 g</td><td>0.147/160 • 0.165/140 • 0.203/130</td></tr>
+            <tr><td>4000</td><td>5.2:1</td><td>6 kg</td><td>273 g</td><td>0.147/220 • 0.165/200 • 0.203/180</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Thick bail + cone bail screw • Waterproof brake parts • Bearing di shaft untuk rotasi ekstra halus.</div>
+      </section>
+
+      <!-- Emerald -->
+      <section class="card" id="reel-emerald">
+        <h2>Emerald Reel — Superior Technology</h2>
+        <div class="badge">
+          <span class="b">CFG Body (Carbon Fiber Graphite)</span>
+          <span class="b">5+1 Bearings</span>
+          <span class="b">Power Handle</span>
+          <span class="b">Instant Anti-Reverse</span>
+        </div>
+        <table class="mono">
+          <thead><tr><th>Size</th><th>Gear</th><th>Drag</th><th>Berat</th><th>Line Capacity (nylon)</th></tr></thead>
+          <tbody>
+            <tr><td>3000</td><td>5.2:1</td><td>6 kg</td><td>244 g</td><td>0.25/230 • 0.30/150</td></tr>
+            <tr><td>4000</td><td>5.2:1</td><td>7 kg</td><td>268 g</td><td>0.35/120 • 0.40/80</td></tr>
+            <tr><td>5000</td><td>5.2:1</td><td>7 kg</td><td>274 g</td><td>0.35/140 • 0.40/100</td></tr>
+            <tr><td>6000</td><td>5.2:1</td><td>8 kg</td><td>383 g</td><td>0.40/200 • 0.45/170</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Superior line lay • Internal bail trip • Body ringan & rigid (Carbon Fiber Graphite).</div>
+      </section>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- =============== QUICK MATRIX =============== -->
+    <h2 id="matrix" style="margin:6px 0 12px">Ringkas • Material, Ring, Handle, Panjang</h2>
+    <section class="card">
+      <table class="mono">
+        <thead><tr><th>Produk</th><th>Material</th><th>Ring</th><th>Handle</th><th>Panjang</th></tr></thead>
+        <tbody>
+          <tr><td>Twist FS</td><td>Fiber Solid</td><td>X-GUIDE</td><td>Full EVA</td><td>150/165/180/210</td></tr>
+          <tr><td>Blue Lotus (Spin/BC)</td><td>Carbon Hollow</td><td>Tornado</td><td>Japan Style</td><td>150/165/180 • 180/189/198</td></tr>
+          <tr><td>Violent Series</td><td>Carbon Solid</td><td>Tornado</td><td>Full EVA / Japan</td><td>150/165/180</td></tr>
+          <tr><td>Brownze Series</td><td>Carbon Solid</td><td>X-GUIDE</td><td>Full EVA / Japan</td><td>150/165/180</td></tr>
+          <tr><td>Light Jig Force Optimal</td><td>Carbon Solid</td><td>ZEN</td><td>Japan Style</td><td>180</td></tr>
+          <tr><td>Twist Voyage</td><td>Carbon Hollow</td><td>Tornado</td><td>Japan Style</td><td>198/210 (4-section)</td></tr>
+          <tr><td>Twist Surf</td><td>Carbon Hollow</td><td>Tornado</td><td>Rubber Grip</td><td>390/420/450</td></tr>
+          <tr><td>Ultima Extreme</td><td>HRS Carbon Solid 24T</td><td>Full FUJI</td><td>Full EVA</td><td>165/180</td></tr>
+        </tbody>
+      </table>
+      <div class="note">Semua konten diselaraskan dengan screenshot Shopee & revisi terakhir tim (clean terminology).</div>
+    </section>
+
+    <footer>© Tornado • Knowledge Hub • “YTTA — Yang Tornado, Tornado Aja”.</footer>
+  </div>
+</body>
+</html>
